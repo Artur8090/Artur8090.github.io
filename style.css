@@ -8,13 +8,13 @@ body {
     background-color: #161616;
 }
 header{
-    background-image: url(img/hero1.jpeg);
+    background-image: url(img/wp6502159.webp);
     width: 100vw;
-    height: 10vh;
+    height: 20vh;
     background-size: cover;
     object-fit: contain ;
 }
-h1, h3, p{
+h1, h3, p, a{
     color: white;
     font-family: poppins;
 }
@@ -63,4 +63,16 @@ h1, h3, p{
 #calculator{
     float: left;
     margin-left: 15%;
+}
+#moving-square-animation{
+float: left;
+margin-left: 15%;
+margin-top: 2% ;
+}
+a:visited, a:hover, a{
+    color: white;
+    text-decoration: none;
+}
+.link-item{
+    margin-left: 40%;
 }
