@@ -14,9 +14,14 @@ header{
     background-size: cover;
     object-fit: contain ;
 }
-h1, h3, p, a{
+h1, h3, p{
     color: white;
     font-family: poppins;
+}
+a{
+    font-family: poppins;
+    color: beige;
+    text-decoration: none;
 }
 #name{
     font-weight: bold;
@@ -69,10 +74,9 @@ float: left;
 margin-left: 15%;
 margin-top: 2% ;
 }
-a:visited, a:hover, a{
+a:visited, a:hover{
     color: white;
-    text-decoration: none;
 }
 .link-item{
-    margin-left: 40%;
+    margin-left: 5%;
 }
