@@ -1,0 +1,69 @@
+name: CI/CD for Portfolio Project
+
+# Trigger the workflow on push or pull request to the main branch
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+# Define environment variables
+env:
+  DOCKER_IMAGE: artur8090/portfolio
+  DEPLOY_BRANCH: gh-pages
+
+jobs:
+  # Job to build and test the Docker image
+  build_and_test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the code from the repository
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Set up Docker Buildx (required for multi-platform builds)
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+
+      # Build the Docker image
+      - name: Build Docker image
+        run: docker build -t $DOCKER_IMAGE .
+
+      # Run HTML and CSS linting
+      - name: Lint HTML and CSS
+        run: |
+          docker run --rm -v $(pwd):/site --workdir /site $DOCKER_IMAGE /bin/sh -c "npx htmlhint '**/*.html' && npx stylelint '**/*.css'"
+
+  # Job to deploy the site to GitHub Pages
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build_and_test
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+      # Checkout the code from the repository
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Set up Git for deployment
+      - name: Set up Git
+        run: |
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'actions@github.com'
+
+      # Build the site (optional if you're processing the site before deployment)
+      - name: Build site
+        run: docker run --rm -v $(pwd):/site --workdir /site $DOCKER_IMAGE /bin/sh -c "cp -r . /site/build"
+
+      # Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+          destination_dir: .
+          publish_branch: $DEPLOY_BRANCH
+          force_orphan: true
