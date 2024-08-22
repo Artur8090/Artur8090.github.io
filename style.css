@@ -45,9 +45,11 @@ a{
     width: 100vw;
 }
 .project-item{
-    border: 1px solid rgba(255, 255, 255, 0.149);
+    background: #161616;
+    border: 1px solid #660000;
     border-radius: 20px;
     width: 30%;
+    transition: transform 0.6s ease;
 
 }
 .project-item img{
@@ -58,6 +60,13 @@ a{
     font-size: 20px;
     text-align: center;
 }
+
+.project-item:hover{
+    transform: translate(20px, 10px);
+    background: linear-gradient(to right, #161616, #1d1c1c);
+    box-shadow: -10px -10px #131313;
+}
+
 #project-title{
     margin-left: 45%;
 }
@@ -79,4 +88,17 @@ a:visited, a:hover{
 }
 .link-item{
     margin-left: 5%;
+}
+
+#mode{
+    background-color: yellow;
+    width: 70px;
+    height: 70px;
+    float: right;
+    margin-right: 5%;
+    border-radius: 50%;
+    color: black;
+    padding-left: 17px;
+    padding-bottom: 20px;
+
 }
