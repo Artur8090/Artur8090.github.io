@@ -5,22 +5,25 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #161616;
+    background-image: url(img/christoph-nolte-xDWBuZIQtGc-unsplash.jpg);
+    background-size: cover;
 }
+
 header{
-    background-image: url(img/wp6502159.webp);
+    background-image: url(img/nasa--hI5dX2ObAs-unsplash.jpg);
+    opacity: 60%;
+    border-bottom: 2px #FFF0F5 solid;
     width: 100vw;
     height: 20vh;
     background-size: cover;
     object-fit: contain ;
 }
 h1, h3, p{
-    color: white;
+    color: #FFF0F5;
     font-family: poppins;
 }
 a{
     font-family: poppins;
-    color: beige;
     text-decoration: none;
 }
 #name{
@@ -35,6 +38,7 @@ a{
     color: rgb(165, 165, 165);
 
 }
+
 .about-me{
     margin-left: 30%;
 }
@@ -84,21 +88,10 @@ margin-left: 15%;
 margin-top: 2% ;
 }
 a:visited, a:hover{
-    color: white;
+    color: #FFF0F5;
 }
 .link-item{
     margin-left: 5%;
+    color: #FFF0F5;
 }
 
-#mode{
-    background-color: yellow;
-    width: 70px;
-    height: 70px;
-    float: right;
-    margin-right: 5%;
-    border-radius: 50%;
-    color: black;
-    padding-left: 17px;
-    padding-bottom: 20px;
-
-}
