@@ -1,42 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-        <header></header>
-        <div class="about-me">
-            <h3 id="name">Artur Cheuchiev</h3>
-            <p id="working-position">Student</p>
-                <p id="intrests">I am a student in Oslo, who is interested in programming and page designing. I enjoy creating code with clean layouts and have past experiences in such programming languages as: HTML, JavaScript, Python, and CSS.</p>
-        </div>
+    <header></header>
+    <div class="about-me">
+        <h3 id="name">Artur Cheuchiev</h3>
+        <p id="working-position">Student</p>
+        <p id="intrests">I am a student in Oslo, who is interested in programming and page designing. I enjoy creating
+            code with clean layouts and have past experiences in such programming languages as: HTML, JavaScript,
+            Python, and CSS.</p>
+    </div>
     <div class="project-wrapper">
         <h1 id="project-title">Projects</h1>
-        <div class="project-item" id="calculator">
-            <p>Calculator</p>
+        <div class="project-items">
+            <div class="arrow" id="left-arrow" style="rotate: 180deg;">
+                <img src="img/arrow-left.png" alt="Left Arrow">
+            </div>
             
-            <a href="https://artur8090.github.io/Projects/" target="_blank"><img src="img/Preview-Calculator.png" alt=""></a>
-            <a href="https://github.com/Artur8090/Projects" class="link-item" target="_blank">Source code: Github</a>
-        </div>
-        <div class="project-item" id="graph">
-            <p>Graph</p>
-            
-            <a href="https://artur8090.github.io/Project-Graph/" target="_blank"><img src="img/Preview-Graph.png" alt=""></a>
-            <a href="https://github.com/Artur8090/Project-Graph" class="link-item" target="_blank">Source code: Github</a>
-        </div>
-        <div class="project-item" id="moving-square-animation">
-            <p>Moving Square</p>
-            
-            <a href="https://artur8090.github.io/Project-Canvas-Visualization/" target="_blank"><img src="img/Spinning square.png" alt=" " ></a>
-            <a href="https://github.com/Artur8090/Project-Canvas-Visualization" class="link-item" target="_blank">Source code: Github</a>
-            
-
+            <div class="project-item" id="calculator">
+                <p>Calculator</p>
+                <a href="https://artur8090.github.io/Projects/" target="_blank">
+                    <img src="img/Preview-Calculator.png" alt="">
+                </a>
+                <a href="https://github.com/Artur8090/Projects" class="link-item" target="_blank">Source code: Github</a>
+            </div>
+    
+            <div class="project-item" id="graph">
+                <p>Graph</p>
+                <a href="https://artur8090.github.io/Project-Graph/" target="_blank">
+                    <img src="img/Preview-Graph.png" alt="">
+                </a>
+                <a href="https://github.com/Artur8090/Project-Graph" class="link-item" target="_blank">Source code: Github</a>
+            </div>
+    
+            <div class="project-item" id="moving-square-animation">
+                <p>Moving Square</p>
+                <a href="https://artur8090.github.io/Project-Canvas-Visualization/" target="_blank">
+                    <img src="img/Spinning square.png" alt=" ">
+                </a>
+                <a href="https://github.com/Artur8090/Project-Canvas-Visualization" class="link-item" target="_blank">Source code: Github</a>
+            </div>
+    
+            <div class="arrow" id="right-arrow">
+                <img src="img/Arrow-left.png" alt="Right Arrow">
+            </div>
         </div>
     </div>
-    <script src="mode.js"></script>
+    
+    </div>
+    <script src="index.js"></script>
 </body>
-</html>
 
+</html>
