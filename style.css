@@ -5,12 +5,12 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url(img/christoph-nolte-xDWBuZIQtGc-unsplash.jpg);
+    background-image: url(img/bg/christoph-nolte-xDWBuZIQtGc-unsplash.jpg);
     background-size: cover;
 }
 
 header{
-    background-image: url(img/nasa--hI5dX2ObAs-unsplash.jpg);
+    background-image: url(img/bg/nasa--hI5dX2ObAs-unsplash.jpg);
     opacity: 60%;
     border-bottom: 2px #FFF0F5 solid;
     width: 100vw;
@@ -48,8 +48,8 @@ a{
     width: 100vw;
 }
 .project-item{
-    background: #161616;
-    border: 1px solid #660000;
+
+    border: 1px solid #000000;
     border-radius: 20px;
     width: 30%;
     transition: transform 0.6s ease;
@@ -92,4 +92,23 @@ a:visited, a:hover{
     margin-left: 5%;
     color: #FFF0F5;
 }
-
+#moving-square-animation{
+    background: url(img/bg/massimiliano-morosinotto-MljwsnGwdOY-unsplash.jpg);
+    background-size: cover;
+}
+#graph{
+    background: url(img/bg/adrien-converse-FWhTeWRCeis-unsplash.jpg);
+    background-size: cover;
+}
+#calculator{
+    background: url(img/bg/maria-orlova-bU8TeXhsPcY-unsplash.jpg);
+    background-size: cover;
+}
+.contact-info img{
+    width: 40px;
+    height: 40px;
+    float: right;
+    margin-right: 20px;
+    border-radius: 10px;
+    background-color: #FFF0F5;
+}
