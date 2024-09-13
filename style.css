@@ -2,6 +2,7 @@
     font-family: poppins;
     src: url(fonts/Poppins/Poppins-Regular.ttf);
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -9,89 +10,112 @@ body {
     background-size: cover;
 }
 
+<<<<<<< HEAD
 header{
     background-image: url(img/bg/nasa--hI5dX2ObAs-unsplash.jpg);
+=======
+header {
+    background-image: url(img/nasa--hI5dX2ObAs-unsplash.jpg);
+>>>>>>> 6c54a18a93e465c6926be0056cc6a6c679b064cf
     opacity: 60%;
     border-bottom: 2px #FFF0F5 solid;
     width: 100vw;
     height: 20vh;
     background-size: cover;
-    object-fit: contain ;
+    object-fit: contain;
 }
-h1, h3, p{
+
+h1, h3, p {
     color: #FFF0F5;
     font-family: poppins;
 }
-a{
+
+a {
     font-family: poppins;
     text-decoration: none;
 }
-#name{
+
+#name {
     font-weight: bold;
     font-size: 20px;
     padding-bottom: 0;
     margin-bottom: 0;
 }
-#working-position{
+
+#working-position {
     font-size: 15px;
     margin-top: 3px;
     color: rgb(165, 165, 165);
 }
 
-.about-me{
+.about-me {
     margin-left: 30%;
 }
-#intrests{
+
+#intrests {
     max-width: 650px;
 }
-.project-wrapper{
+
+.project-wrapper {
     width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+<<<<<<< HEAD
 .project-item{
 
     border: 1px solid #000000;
-    border-radius: 20px;
-    width: 30%;
-    transition: transform 0.6s ease;
+=======
 
+.project-items {
+    display: flex;
+    justify-content: space-evenly; /* Distribute items with smaller gaps */
+    align-items: center;
+    width: 85%; /* Reduce width for more compact layout */
+    margin: 10px auto;
+    position: relative;
 }
-.project-item img{
-    width: 75%;
-    padding-left: 50px;
+
+.project-item {
+    background: none;
+    border: 1px solid #660000;
+>>>>>>> 6c54a18a93e465c6926be0056cc6a6c679b064cf
+    border-radius: 20px;
+    width: 23%; /* Reduce width of each project item */
+    transition: transform 0.6s ease;
+    margin: 0; /* Removed extra margin for tighter spacing */
+    text-align: center;
+    padding: 18px;
+    box-sizing: border-box;
 }
-.project-item p{
-    font-size: 20px;
+
+.project-item img {
+    width: 85%;
+    margin: 0 auto;
+    display: block;
+}
+
+.project-item p {
+    font-size: 22px;
     text-align: center;
 }
 
-.project-item:hover{
+.project-item:hover {
     transform: translate(20px, 10px);
-    box-shadow: -5px -5px #03000e;
+    box-shadow: -3px -3px #03000e;
 }
 
-#project-title{
-    margin-left: 45%;
-}
-#graph{
-    float: right;
-    margin-right: 15%;
-}
-#calculator{
-    float: left;
-    margin-left: 15%;
-}
-#moving-square-animation{
-float: left;
-margin-left: 15%;
-margin-top: 2% ;
-}
-a:visited, a:hover{
+a:visited, a:hover {
     color: #FFF0F5;
 }
-.link-item{
+
+.link-item {
     margin-left: 5%;
     color: #FFF0F5;
 }
+<<<<<<< HEAD
 #moving-square-animation{
     background: url(img/bg/massimiliano-morosinotto-MljwsnGwdOY-unsplash.jpg);
     background-size: cover;
@@ -112,3 +136,30 @@ a:visited, a:hover{
     border-radius: 10px;
     background-color: #FFF0F5;
 }
+=======
+
+.arrow {
+    width: 40px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: width 0.3s ease;
+}
+
+.arrow img {
+    width: 150%;
+    height: auto;
+}
+
+#left-arrow {
+    position: absolute;
+    left: -50px;
+}
+
+#right-arrow {
+    position: absolute;
+    right: -30px;
+}
+>>>>>>> 6c54a18a93e465c6926be0056cc6a6c679b064cf
