@@ -66,7 +66,8 @@ a{
 
 .project-item:hover{
     transform: translate(20px, 10px);
-    box-shadow: -5px -5px #03000e;
+    box-shadow: -3px -3px rgba(0,0,0, 0.4);
+    
 }
 
 #project-title{
@@ -84,6 +85,19 @@ a{
 float: left;
 margin-left: 15%;
 margin-top: 2% ;
+background: url(img/bg/massimiliano-morosinotto-MljwsnGwdOY-unsplash.jpg);
+background-size: cover;
+}
+#SPA-website{
+    float: right;
+    margin-right: 15%;
+    margin-top: 2%;
+    background: url(img/bg/coolMountain.jpg);
+    background-size: cover;
+}
+#SPA-website img{
+    width: 300px;
+    height: 300px;
 }
 a:visited, a:hover{
     color: #FFF0F5;
@@ -92,10 +106,7 @@ a:visited, a:hover{
     margin-left: 5%;
     color: #FFF0F5;
 }
-#moving-square-animation{
-    background: url(img/bg/massimiliano-morosinotto-MljwsnGwdOY-unsplash.jpg);
-    background-size: cover;
-}
+
 #graph{
     background: url(img/bg/adrien-converse-FWhTeWRCeis-unsplash.jpg);
     background-size: cover;
